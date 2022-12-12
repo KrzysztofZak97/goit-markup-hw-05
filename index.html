@@ -54,7 +54,7 @@
           <h1 class="h1-item-text">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="buttons button-h1-text h1-item-button">
+          <button class="buttons button-h1-text h1-item-button" data-modal-open>
             Zamów Usługę
           </button>
         </div>
@@ -117,18 +117,19 @@
         <div class="container">
           <h2>Czym się zajmujemy</h2>
           <ul class="list-style list-box">
-            <li class="list-item-box">
+            <li class="list-item-box what-we-do-description-box">
               <img
                 src="images/box1.jpg"
                 alt="Coding"
                 width="370"
                 height="294"
               />
+              <p class="what-we-do-description">Aplikacje komputerowe</p>
             </li>
-            <li class="list-item-box">
+            <li class="list-item-box what-we-do-description-box">
               <img src="images/box2.jpg" alt="Apps" width="370" height="294" />
             </li>
-            <li class="list-item-box">
+            <li class="list-item-box what-we-do-description-box">
               <img
                 src="images/box3.jpg"
                 alt="Graphics"
@@ -424,5 +425,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
